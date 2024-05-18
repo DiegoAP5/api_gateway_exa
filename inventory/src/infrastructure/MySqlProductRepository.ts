@@ -1,4 +1,4 @@
-import query from "/cuatri9/SOA/PRACTICA1/inventory/src/db/connection.ts";
+import query from "/cuatri9/SOA/PRACTICA1/inventory/src/db/connection";
 import UUIDInterface from "../application/services/UUIDInterface";
 import Product from "../domain/models/Product";
 import ProductRepository from "../domain/models/ProductRepository";
