@@ -14,7 +14,7 @@ app.use(morgan('dev'));
 const PORT = process.env.PORT || 3000;
 const GATEWAY = process.env.SERVICE_NAME;
 
-app.use('/api/orders',proxy('http://localhost:3001'));
+app.use('/api/orders',proxy('http://localhost:8080'));
 app.use('/api/products',proxy('http://localhost:5000'));
 
 // health check
