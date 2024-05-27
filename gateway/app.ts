@@ -17,13 +17,6 @@ const GATEWAY = process.env.SERVICE_NAME;
 app.use('/api/orders',proxy('http://localhost:8080'));
 app.use('/api/products',proxy('http://localhost:5000'));
 
-// health check
-app.get('/health', (req: Request, res: Response) => {
-    res.json({status: 'UP'});
-});
-
-// rutas de auth
-
 app.listen(PORT, () => {
     signale.success(`Servicio ${GATEWAY} corriendo en http://localhost:${PORT}`);
 });
